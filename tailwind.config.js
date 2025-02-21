@@ -5,6 +5,8 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
+        DomineBold: ["Domine-Bold", "sans-serif"],
+        DomineRegular: ["Domine-Regular", "sans-serif"],
         PoppinnsThinItalic: ["Poppins-ThinItalic", "sans-serif"],
         PoppinnsThin: ["Poppins-Thin", "sans-serif"],
         PoppinsSemiBoldItalic: ["Poppins-SemiBoldItalic", "sans-serif"],
