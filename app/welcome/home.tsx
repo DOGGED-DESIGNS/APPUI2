@@ -40,7 +40,7 @@ const home = () => {
 
       {/* this is the location section */}
 
-      <View className=" items-center mt-12 px-6 py-4 flex-row  border-[4px] rounded-xl border-zinc-300  gap-5 p-3 bg-white  ">
+      <View className=" items-center mt-12 px-6 py-4 flex-row shadow-[10px_10px_3px_5px_rgba(255,0,0,0.5)]  border-[4px] rounded-xl border-zinc-300  gap-5 p-3 bg-white  ">
         <View className=" p-3 rounded-full   bg-orange-300   ">
           <Image
             className="h-10 w-10 "
@@ -50,12 +50,12 @@ const home = () => {
         </View>
         <View className=" ">
           <Text className=" text-zinc-400 text-sm leading-relaxed ">
-            your location{" "}
+            your location
           </Text>
           <View className=" items-center flex-row gap-2">
             <Text className=" text-base text-zinc-600">
               No 15 fabukade street shougunle
-            </Text>{" "}
+            </Text>
             <TouchableOpacity className="p-2">
               <Image
                 className="h-4 w-4"
