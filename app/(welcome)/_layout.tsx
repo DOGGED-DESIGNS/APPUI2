@@ -1,14 +1,32 @@
 import { View, Text } from "react-native";
 import React from "react";
-import { Stack } from "expo-router";
+import { Stack, Tabs } from "expo-router";
 import { StatusBar } from "expo-status-bar";
+import TailorButton from "@/components/TailorButton";
+import { Icons } from "@/constants";
 
 const _layout = () => {
   return (
     <>
-      <Stack>
-        <Stack.Screen name="home" options={{ headerShown: false }} />
-      </Stack>
+      <Tabs
+        screenOptions={{
+          tabBarStyle: {
+            backgroundColor: "#fff",
+          },
+        }}
+      >
+        <Tabs.Screen
+          name="home"
+          options={{
+            headerShown: false,
+
+            tabBarButton: (props) => (
+              <TailorButton image={Icons.location} {...props} />
+            ),
+          }}
+        />
+      </Tabs>
+
       <StatusBar
         // Background color of the status bar
         style="dark" // Text color: "light" (white) or "dark" (black)
