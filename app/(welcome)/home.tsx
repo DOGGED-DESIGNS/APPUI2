@@ -3,6 +3,7 @@ import React from "react";
 import { Redirect } from "expo-router";
 import { SafeAreaView } from "react-native-safe-area-context";
 import { Icons, Images } from "@/constants";
+import { StatusBar } from "expo-status-bar";
 
 const home = () => {
   return (
@@ -40,8 +41,8 @@ const home = () => {
 
       {/* this is the location section */}
 
-      <View className=" items-center mt-12 px-6 py-4 flex-row shadow-[10px_10px_3px_5px_rgba(255,0,0,0.5)]  border-[4px] rounded-xl border-zinc-300  gap-5 p-3 bg-white  ">
-        <View className=" p-3 rounded-full   bg-orange-300   ">
+      <View className=" items-center mt-12 px-6 py-4 flex-row shadow-[0px_0px_4px_rgba(0,0,0,2)]   border-[4px] rounded-xl border-zinc-300  gap-5 p-3 bg-white  ">
+        <View className=" p-3 rounded-full   bg-orange-500   ">
           <Image
             className="h-10 w-10 "
             resizeMode="contain"
@@ -63,6 +64,31 @@ const home = () => {
                 source={Icons.dropdown}
               />
             </TouchableOpacity>
+          </View>
+        </View>
+      </View>
+
+      <View className=" mt-12">
+        <Text className="font-PoppingsMedium text-xl capitalize mb-10 text-zinc-700">
+          {" "}
+          Find Services{" "}
+        </Text>
+        <View className=" flex-row gap-5">
+          <View className="  shadow-[0px_0px_4px_rgba(0,0,0,2)] bg-white  items-center flex-grow rounded-xl p-6 border-2 border-orange-500 space-y-12">
+            <Image
+              className="h-[100px] w-[100px] rounded-full"
+              resizeMode="contain"
+              source={Images.uifaces}
+            />
+            <Text className=" mt-3 text-xl font-PoppinsMedium"> Tailor</Text>
+          </View>
+          <View className="shadow-[0px_0px_4px_rgba(0,0,0,2)] bg-white flex-grow items-center rounded-xl p-6 border-2 border-orange-500  ">
+            <Image
+              className="h-[100px] w-[100px] rounded-full"
+              resizeMode="contain"
+              source={Images.uifaces}
+            />
+            <Text className=" mt-3  text-xl font-PoppinsMedium"> Tailor</Text>
           </View>
         </View>
       </View>

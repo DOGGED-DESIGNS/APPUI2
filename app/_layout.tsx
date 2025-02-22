@@ -55,8 +55,13 @@ export default function RootLayout() {
 
   return (
     <>
+      <StatusBar
+        backgroundColor="#6200ee" // Background color of the status bar
+        style="light" // Text color: "light" (white) or "dark" (black)
+      />
       <Stack>
         <Stack.Screen name="(welcome)" options={{ headerShown: false }} />
+        <Stack.Screen name="index" options={{ headerShown: false }} />
         <Stack.Screen name="+not-found" />
       </Stack>
     </>

@@ -4,7 +4,7 @@ import { SafeAreaView } from "react-native-safe-area-context";
 import { Icons } from "@/constants";
 import { Redirect } from "expo-router";
 const index = () => {
-  return <Redirect href={"/welcome/home"} />;
+  return <Redirect href={"/(welcome)/home"} />;
 };
 
 export default index;
