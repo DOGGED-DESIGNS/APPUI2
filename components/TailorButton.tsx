@@ -15,7 +15,7 @@ const TailorButton = ({ image, accessibilityState }: ultType) => {
   const isActive = accessibilityState?.selected;
   return (
     <View className=" items-center space-y-2">
-      <Image resizeMode="contain" className="h-5 w-5" source={Icons.location} />
+      <Image resizeMode="contain" className="h-7 w-7" source={Icons.location} />
       <Text> Location</Text>
     </View>
   );

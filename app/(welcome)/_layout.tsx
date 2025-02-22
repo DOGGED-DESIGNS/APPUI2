@@ -12,11 +12,46 @@ const _layout = () => {
         screenOptions={{
           tabBarStyle: {
             backgroundColor: "#fff",
+            height: 70,
+
+            alignItems: "center",
+            display: "flex",
+            flexDirection: "row",
           },
         }}
       >
         <Tabs.Screen
           name="home"
+          options={{
+            headerShown: false,
+
+            tabBarButton: (props) => (
+              <TailorButton image={Icons.location} {...props} />
+            ),
+          }}
+        />
+        <Tabs.Screen
+          name="comment"
+          options={{
+            headerShown: false,
+
+            tabBarButton: (props) => (
+              <TailorButton image={Icons.location} {...props} />
+            ),
+          }}
+        />
+        <Tabs.Screen
+          name="tailor"
+          options={{
+            headerShown: false,
+
+            tabBarButton: (props) => (
+              <TailorButton image={Icons.location} {...props} />
+            ),
+          }}
+        />
+        <Tabs.Screen
+          name="machine"
           options={{
             headerShown: false,
 
