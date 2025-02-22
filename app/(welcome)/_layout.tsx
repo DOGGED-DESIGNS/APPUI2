@@ -11,7 +11,7 @@ const _layout = () => {
       <Tabs
         screenOptions={{
           tabBarStyle: {
-            backgroundColor: "#fff",
+            backgroundColor: "#F2F2F2",
             height: 70,
 
             alignItems: "center",
@@ -26,7 +26,11 @@ const _layout = () => {
             headerShown: false,
 
             tabBarButton: (props) => (
-              <TailorButton image={Icons.location} {...props} />
+              <TailorButton
+                imageinactive={Icons.homeoutlined}
+                imageactive={Icons.homefilled}
+                {...props}
+              />
             ),
           }}
         />
@@ -36,7 +40,11 @@ const _layout = () => {
             headerShown: false,
 
             tabBarButton: (props) => (
-              <TailorButton image={Icons.location} {...props} />
+              <TailorButton
+                imageinactive={Icons.commentoutlined}
+                imageactive={Icons.commentfilled}
+                {...props}
+              />
             ),
           }}
         />
@@ -46,7 +54,11 @@ const _layout = () => {
             headerShown: false,
 
             tabBarButton: (props) => (
-              <TailorButton image={Icons.location} {...props} />
+              <TailorButton
+                imageinactive={Icons.hangeroutline}
+                imageactive={Icons.hangerfilled}
+                {...props}
+              />
             ),
           }}
         />
@@ -56,7 +68,11 @@ const _layout = () => {
             headerShown: false,
 
             tabBarButton: (props) => (
-              <TailorButton image={Icons.location} {...props} />
+              <TailorButton
+                imageinactive={Icons.machineoutline}
+                imageactive={Icons.machinefilled}
+                {...props}
+              />
             ),
           }}
         />

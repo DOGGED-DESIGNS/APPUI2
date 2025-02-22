@@ -4,21 +4,39 @@ import {
   Image,
   PressableProps,
   ImageSourcePropType,
+  Pressable,
 } from "react-native";
 import React from "react";
 import { Icons } from "@/constants";
 
 interface ultType extends PressableProps {
-  image: ImageSourcePropType;
+  imageactive: ImageSourcePropType;
+  imageinactive: ImageSourcePropType;
 }
-const TailorButton = ({ image, accessibilityState }: ultType) => {
+const TailorButton = ({
+  imageactive,
+  imageinactive,
+  accessibilityState,
+  onPress,
+}: ultType) => {
   const isActive = accessibilityState?.selected;
   return (
-    <View className=" items-center space-y-2">
-      <Image resizeMode="contain" className="h-7 w-7" source={Icons.location} />
-      <Text> Location</Text>
-    </View>
+    <Pressable onPress={onPress} className=" items-center ">
+      <Image
+        tintColor={isActive ? "#F46800" : "#727272"}
+        resizeMode="contain"
+        className=" mb-2 h-7 w-7"
+        source={isActive ? imageactive : imageinactive}
+      />
+      <View
+        className={
+          isActive ? `h-[2px] w-8 rounded-full bg-orange-700` : " hidden"
+        }
+      ></View>
+    </Pressable>
   );
 };
 
 export default TailorButton;
+
+// F46800
